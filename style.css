@@ -1,0 +1,75 @@
+.hidden{
+    display: none;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(18, 18, 83);
+}
+header{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    width: 90%;
+    max-width: 1200px;
+
+    background-color: rgb(98, 98, 182);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 15px;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    border: solid 2px black;
+}
+header div{
+    display: flex;
+    gap: 10px;
+}
+#search-input{
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    background-color:rgb(229, 174, 106);
+    border-radius: 7.5px;
+    border: solid rgb(177, 102, 4) 2px;
+}
+#search-btn{
+    background-color: rgb(18, 18, 83);
+    border-radius: 7.5px;
+    border: solid white 2px;
+    color: azure;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+main{
+    box-sizing: border-box;
+}
+
+#profile{
+    width: 90%;
+    height: 300px;
+    max-width: 1200px;
+
+    margin: 80px auto 0;  /* 🔥 auto centers */
+
+    box-sizing: border-box;
+
+    background-color: rgb(98, 98, 182);
+
+    display: flex;
+}
+
+.profile-section{
+    flex: 1;
+}
+
+
+
