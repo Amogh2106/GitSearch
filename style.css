@@ -51,24 +51,85 @@ header div{
 
 main{
     box-sizing: border-box;
+    padding-top: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#profile{
-    width: 90%;
-    height: 300px;
-    max-width: 1200px;
 
-    margin: 80px auto 0;  /* 🔥 auto centers */
 
-    box-sizing: border-box;
-
-    background-color: rgb(98, 98, 182);
-
+#profile-card{
+    color: antiquewhite;
     display: flex;
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 24px;
+    gap: 24px;
+    align-items: center;
+    background-color: rgb(30, 30, 100);
+    border: 2px solid rgb(98, 98, 182);
+}
+#avatar{
+    transform: translateY(-70%);
+    width: 90px;
+    height: 90px;
+    border: 2px black solid;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: flex-end;
 }
 
-.profile-section{
+.profile-info h1 { color: white; margin: 0 0 4px; }
+.profile-info #username { color: rgb(180, 180, 220); margin: 0 0 8px; font-size: 0.9rem; }
+.profile-info #bio { color: rgb(200, 200, 230); margin: 0; font-size: 0.9rem; line-height: 1.5; }
+
+.stats{
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.stat {
     flex: 1;
+    background-color: rgb(30, 30, 100);
+    border: 2px solid rgb(98, 98, 182);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.stat span{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(229, 174, 106);
+}
+.stat label {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: rgb(180, 180, 220);
+}
+
+#repos{
+    max-height: 250px;
+    overflow-y: scroll;
+    border: 2px solid rgb(98, 98, 182);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+    color: white;
+}
+
+#repos h2 {
+    position: sticky;
+    top: 0;
+    background-color: rgb(18, 18, 83); /* same as your page bg */
+    padding-bottom: 8px;
+    margin: 0 0 12px;
+    color: rgb(229, 174, 106);
 }
 
 
