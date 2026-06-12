@@ -1,5 +1,6 @@
 async function fetchData(){
     try{
+        
         const username = document.getElementById("search-input").value.trim();
         if(!username){
             console.log("Please eneter a username");
@@ -41,12 +42,19 @@ async function fetchData(){
                 <a href="${repo.html_url}" target="_blank">${repo.name}</a>
             </li>
         `).join('');
+
+        document.getElementById("profile").classList.remove("hidden");
+
         console.log(data.avatar_url);
         console.log(data);
         
         
     }
     catch(error){
+        document.getElementById("error").classList.remove("hidden");
         console.error("Fetch failed : ",error);
     }
+}
+function Search(){
+    
 }

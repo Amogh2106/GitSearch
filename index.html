@@ -16,14 +16,15 @@
         </div>
     </header>
     <main>
+        <div id="error" class="hidden">User Not Found</div>
         <!-- PROFILE CARD -->
-        <section id="profile" ><!-- class="hidden" -->
+        <section id="profile" class="hidden">
             <div id="profile-card">
                 <img src="pic.avif" id="avatar" alt="">
                 <div class="profile-info">
                     <!-- <h1 id="name">Name</h1> -->
-                    <p id="username">USERNAME</p>
-                    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magni dolore, aut voluptates ratione omnis quisquam accusantium ipsam harum repellendus, necessitatibus quae voluptas! Pariatur nam, voluptatibus quos illum aliquam alias.</p>
+                    <p id="username"></p>
+                    <p id="bio"></p>
                 </div>
             </div>
             
@@ -48,9 +49,6 @@
             <h2>Repositories</h2>
             <ul id="repos-list"></ul>
         </section>
-        <!-- STATES -->
-        <div id="loading" class="hidden">Loading...</div>
-        <div id="error" class="hidden">User Not Found</div>
     </main>
     <script src="script.js"></script>
 </body>
