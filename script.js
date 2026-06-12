@@ -43,18 +43,20 @@ async function fetchData(){
             </li>
         `).join('');
 
+        document.getElementById("error").classList.add("hidden"); // hide old error
+        document.getElementById("profile").classList.remove("hidden");
+
         document.getElementById("profile").classList.remove("hidden");
 
         console.log(data.avatar_url);
         console.log(data);
+
         
         
     }
     catch(error){
+        document.getElementById("profile").classList.add("hidden");
         document.getElementById("error").classList.remove("hidden");
-        console.error("Fetch failed : ",error);
+        console.error("Fetch failed:", error);
     }
-}
-function Search(){
-    
 }

@@ -149,5 +149,11 @@ main{
     font-size: 1.2rem;
 }
 
+a,
+a:visited {
+    color: rgb(229, 174, 106);
+    text-decoration: none;
+}
+
 
 
