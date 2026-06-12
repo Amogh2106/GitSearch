@@ -45,8 +45,7 @@ async function fetchData(){
 
         document.getElementById("error").classList.add("hidden"); // hide old error
         document.getElementById("profile").classList.remove("hidden");
-
-        document.getElementById("profile").classList.remove("hidden");
+        document.getElementById("repos").classList.remove("hidden");
 
         console.log(data.avatar_url);
         console.log(data);
@@ -56,6 +55,7 @@ async function fetchData(){
     }
     catch(error){
         document.getElementById("profile").classList.add("hidden");
+        document.getElementById("repos").classList.add("hidden");
         document.getElementById("error").classList.remove("hidden");
         console.error("Fetch failed:", error);
     }
