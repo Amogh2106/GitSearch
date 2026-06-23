@@ -47,8 +47,6 @@ async function fetchData(){
         document.getElementById("profile").classList.remove("hidden");
         document.getElementById("repos").classList.remove("hidden");
 
-        console.log(data.avatar_url);
-        console.log(data);
 
         
         
